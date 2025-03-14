@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    printf("cartas super trunfo! \n");
+    printf("cidade 1 ! \n");
 
     char estado = "minas gerais";
     char codigoDaCIDADE[6] = "A 01" ;
@@ -10,24 +10,23 @@ int main() {
     float área = 395.6;
     float PIB =  8093809.94;
     int numeroPontosturistico = 15;
-    
-    printf("Digite o estado: \n", estado);
 
-    printf("Digite o codigo: \n", codigoDaCIDADE);
+    return 0;
 
-    printf("digite a cidade: \n", cidade);
+}
 
-    printf("digite o numero de população: \s", população);
+#include <stdio.h>
 
-    printf("Tamanho da área: \s", área);
+int main() {
+    printf("cidade 2 ! \n");
 
-    printf("Qual o PIB: \s", PIB);
-
-    printf("Numero de pontos turistico: \s",numeroPontosturistico);
-
-    printf("nome do estado: %s - codigo: %s - cidade:%s", estado, codigoDaCIDADE, cidade);
-    printf("população: %d - área: %f - PIB: %f", população, área, PIB);
-    printf("numero pontos turistico: %d");
+    char estado = "minas gerais";
+    char codigoDaCIDADE[6] = "A 02" ;
+    char cidade[10] = "tres corações";
+    int população = 100.800;
+    float área = 420.6;
+    float PIB =  993809.94;
+    int numeroPontosturistico = 8;
 
     return 0;
 
