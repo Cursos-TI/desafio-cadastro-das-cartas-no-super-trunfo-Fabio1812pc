@@ -99,7 +99,7 @@
        printf("\n");
 
        printf("Carta 01:\n");
-       printf("Estado: %c \n", Estado);
+       printf("Estado: %s \n", Estado);
        printf("Código: %s \n", Cod_carta);
        printf("Nome da Cidade: %s \n", Nome_da_cidade);
        printf("População: %lu Habitantes\n", populacao);
@@ -116,7 +116,7 @@
        printf("\n");
 
        printf("Carta 2:\n");
-       printf("Estado: %c \n", Estado2);
+       printf("Estado: %s \n", Estado2);
        printf("Código: %s \n", Cod_carta2);
        printf("Nome da Cidade: %s \n", Nome_da_cidade2);
        printf("População: %lu Habitantes\n", populacao2);
@@ -127,21 +127,22 @@
        printf("PIB Per Capita: %.2f reais\n", pib_per_capita2);
        printf("Super Poder: %.2f\n", super_poder2);
 
-       printf("\n");
-       printf("====================carta2=======================");
-       printf("\n");
 
-       if (super_poder >= super_poder2){
+       printf("\n");
+       printf("====================comparar cartas=======================");
+       printf("\n");
+    
+       printf("populacao: carta %d venceu(%d)\n", 1 + (populacao < populacao2), (populacao > populacao2) * 1);
+       printf("Area: carta: %d venceu(%d)\n", 1 + (Area_em_km < Area_em_Km2), (Area_em_km > Area_em_Km2) * 1);
+       printf("PIB: carta %d venceu(%d)\n", 1 + (PIB < PIB2), (PIB > PIB2) * 1);
+       printf("pontos turistico: carta %d venceu(%d)\n", 1 + (Pontos_Turisticos < Pontos_Turisticos2), (Pontos_Turisticos > Pontos_Turisticos2) * 1);
+
+       if (super_poder > super_poder2){
        printf("super poder carta1 e maior que carta2\n");
        }else {
-        printf("super poder carta1 e menor que carta2\n");
+       printf("o super poder carta1 e menor que a carta2\n");
        }
-
-       
-
 
        return 0;
 
-     
 }
-   
